@@ -289,27 +289,133 @@ const kata18 = () => {
 
 showResults(kata18());
 
+const kataBonus1 = () => {
+    const main = document.createElement('main');
+    for (let i=1;i<=20;i++) {
+        const div = document.createElement('div');
+        div.classList.add(`div${i}`);
+        div.style.padding = '20px';
+        div.style.height = '20px';
+        div.style.width = '100px';
+        div.style.backgroundColor = 'gray';
+        div.style.margin = '10px';
+        main.appendChild(div);
+    }
+    main.style.display = 'flex';
+    main.style.flexDirection = 'row';
+    main.style.flexWrap = 'wrap';
+    main.style.border = '5px solid black';
+    main.style.width = '45%';
+    main.style.margin = '0 auto';
+    document.body.appendChild(main);
+    return '';
+}
 
- /**
-  * Daqui em diante são os bônus, por sua conta e risco
-  */
+showResults(kataBonus1());
 
-//  function kataBonus1() {
-//       implemente o código do kata bonus 1 aqui
-//  }
 
-//  function kataBonus2() {
-//       implemente o código do kata bonus 2 aqui
-//  }
+const kataBonus2 = () => {
+    const main = document.createElement('main');
+    let count = 105;
+    for (let i=0;i<20;i++) {
+        const div = document.createElement('div');
+        div.classList.add(`div${i}`);
+        div.style.padding = '20px';
+        div.style.height = '20px';
+        div.style.width = `${count}px`;
+        div.style.backgroundColor = 'gray';
+        div.style.margin = '10px';
+        main.appendChild(div);
+        count += 5;
+    }
+    main.style.display = 'flex';
+    main.style.flexDirection = 'row';
+    main.style.flexWrap = 'wrap';
+    main.style.border = '5px solid black';
+    main.style.width = '45%';
+    main.style.margin = '0 auto';
+    document.body.appendChild(main);
+    return '';
+}
 
-//  function kataBonus3() {
-//       implemente o código do kata bonus 3 aqui
-//  }
+showResults(kataBonus2());
 
-//  function kataBonus4() {
-//       implemente o código do kata bonus 4 aqui
-//  }
+const kataBonus3 = () => {
+    const main = document.createElement('main');
+    for (let i=1;i<=20;i++) {
+        const div = document.createElement('div');
+        div.classList.add(`div${i}`);
+        div.style.padding = '20px';
+        div.style.height = '20px';
+        div.style.width = `${sampleArray[i]}px`;
+        div.style.backgroundColor = 'gray';
+        div.style.margin = '10px';
+        main.appendChild(div);
+    }
+    main.style.display = 'flex';
+    main.style.flexDirection = 'row';
+    main.style.flexWrap = 'wrap';
+    main.style.border = '5px solid black';
+    main.style.width = '100%';
+    main.style.margin = '0 auto';
+    document.body.appendChild(main);
+    return '';
+}
 
-//  function kataBonus5() {
-//       implemente o código do kata bonus 5 aqui
-//  }
+showResults(kataBonus3());
+
+
+const kataBonus4 = () => {
+    const main = document.createElement('main');
+    for (let i=1;i<=20;i++) {
+        const div = document.createElement('div');
+        div.classList.add(`div${i}`);
+        div.style.padding = '20px';
+        div.style.height = '20px';
+        div.style.width = `${sampleArray[i]}px`;
+        if (i%2===1) {
+            div.style.backgroundColor = 'red';  
+        } else {
+            div.style.backgroundColor = 'grey';
+        }
+        div.style.margin = '10px';
+        main.appendChild(div);
+    }
+    main.style.display = 'flex';
+    main.style.flexDirection = 'row';
+    main.style.flexWrap = 'wrap';
+    main.style.border = '5px solid black';
+    main.style.width = '100%';
+    main.style.margin = '0 auto';
+    document.body.appendChild(main);
+    return '';
+}
+
+showResults(kataBonus4());
+
+const kataBonus5 = () => {
+    const main = document.createElement('main');
+    for (let i=0;i<20;i++) {
+        const div = document.createElement('div');
+        div.classList.add(`div${i}`);
+        div.style.padding = '20px';
+        div.style.height = '20px';
+        div.style.width = `${sampleArray[i]}px`;
+        div.style.backgroundColor = 'gray';
+        div.style.margin = '10px';
+        if (sampleArray[i]%2===0) {
+            div.style.backgroundColor = `#${sampleArray[i]}`
+        }
+        main.appendChild(div);
+    }
+    main.style.display = 'flex';
+    main.style.flexDirection = 'row';
+    main.style.flexWrap = 'wrap';
+    main.style.border = '5px solid black';
+    main.style.width = '45%';
+    main.style.margin = '0 auto';
+    document.body.appendChild(main);
+    return '';
+}
+
+showResults(kataBonus5());
