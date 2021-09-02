@@ -404,7 +404,7 @@ const kataBonus5 = () => {
         div.style.backgroundColor = 'gray';
         div.style.margin = '10px';
         if (sampleArray[i]%2===0) {
-            div.style.backgroundColor = `#${sampleArray[i]}`
+            div.style.backgroundColor = `red`
         }
         main.appendChild(div);
     }
